@@ -3,449 +3,239 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.documentElement.classList.add("js");</script>
-  <meta name="description" content="Compare Astana Explorer tour packages, prices per person, what is included and the schedule of the next group tours.">
-  <title>Tours &amp; Prices | Astana Explorer</title>
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Tour packages of Astana Explorer with prices and what is included.">
+  <title>Tours and Prices | Astana Explorer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ===== Header / navigation ===== -->
-  <header class="site-header" id="siteHeader">
-    <nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Main navigation">
+  <!-- Header and navigation menu -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <span class="brand-mark"><i class="bi bi-brightness-high-fill" aria-hidden="true"></i></span>
-          <span class="brand-text">Astana<span class="brand-accent">Explorer</span></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">Astana<span>Explorer</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="tours.html">Tours &amp; Prices</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">Travel Blog</a></li>
+            <li class="nav-item"><a class="nav-link active" href="tours.html">Tours &amp; Prices</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-              <a class="btn btn-brand btn-sm px-3" href="contact.html#bookingForm">Book a Tour</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <main id="main">
+  <main>
 
-    <!-- ===== Page banner ===== -->
-    <section class="page-banner">
-      <div class="container banner-inner">
-        <nav aria-label="Breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tours &amp; Prices</li>
-          </ol>
-        </nav>
-        <h1>Tours &amp; prices</h1>
-        <p>
-          Transparent prices per person, small groups and no hidden fees. Compare the four routes
-          below and choose the one that fits your stay.
-        </p>
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Tours and prices</h1>
+        <p>Transparent prices per person, small groups and no hidden fees.</p>
       </div>
     </section>
 
-    <!-- ===== Price table ===== -->
+    <!-- Comparison table -->
     <section class="section">
       <div class="container">
-        <div class="section-head text-center mb-5">
-          <span class="eyebrow">Packages</span>
+        <div class="text-center mb-5">
           <h2 class="section-title">Compare our tour packages</h2>
-          <p class="section-sub mx-auto">
-            All prices are given per person in tenge (&#8376;) for a group of up to 6 guests.
-          </p>
+          <p class="section-text">All prices are given per person in tenge for a group of up to 6 guests.</p>
         </div>
 
-        <div class="table-card fade-up">
+        <div class="table-card">
           <div class="table-responsive">
-            <table class="table price-table align-middle">
-              <caption class="visually-hidden">Comparison of the four Astana Explorer tour packages</caption>
+            <table class="table table-bordered tour-table">
               <thead>
                 <tr>
                   <th scope="col">What you get</th>
-                  <th scope="col" class="text-center">City Lights</th>
-                  <th scope="col" class="text-center">Steppe &amp; Sky <span class="badge-pop">Popular</span></th>
-                  <th scope="col" class="text-center">Culture Pass</th>
-                  <th scope="col" class="text-center">Private Custom</th>
+                  <th scope="col">City Lights</th>
+                  <th scope="col">Steppe and Sky (popular)</th>
+                  <th scope="col">Culture Pass</th>
+                  <th scope="col">Private Custom</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">Duration</th>
-                  <td class="text-center">3 hours</td>
-                  <td class="text-center">8 hours</td>
-                  <td class="text-center">2 days</td>
-                  <td class="text-center">your choice</td>
+                  <td>3 hours</td>
+                  <td>8 hours</td>
+                  <td>2 days</td>
+                  <td>your choice</td>
                 </tr>
                 <tr>
                   <th scope="row">Group size</th>
-                  <td class="text-center">up to 10</td>
-                  <td class="text-center">up to 6</td>
-                  <td class="text-center">up to 8</td>
-                  <td class="text-center">1 &ndash; 4</td>
+                  <td>up to 10</td>
+                  <td>up to 6</td>
+                  <td>up to 8</td>
+                  <td>1 - 4</td>
                 </tr>
                 <tr>
                   <th scope="row">Route</th>
-                  <td class="text-center">Old centre walking tour</td>
-                  <td class="text-center">City + Burabay lakes</td>
-                  <td class="text-center">Museums + mosques</td>
-                  <td class="text-center">built with you</td>
+                  <td>Old centre walking tour</td>
+                  <td>City and Burabay lakes</td>
+                  <td>Museums and mosques</td>
+                  <td>built with you</td>
                 </tr>
                 <tr>
                   <th scope="row">Transport</th>
-                  <td class="text-center">public bus</td>
-                  <td class="text-center">minivan included</td>
-                  <td class="text-center">minivan included</td>
-                  <td class="text-center">car or minivan</td>
+                  <td>public bus</td>
+                  <td>minivan included</td>
+                  <td>minivan included</td>
+                  <td>car or minivan</td>
                 </tr>
                 <tr>
                   <th scope="row">Entrance tickets</th>
-                  <td class="text-center">not included</td>
-                  <td class="text-center">included</td>
-                  <td class="text-center">included</td>
-                  <td class="text-center">included</td>
+                  <td>not included</td>
+                  <td>included</td>
+                  <td>included</td>
+                  <td>included</td>
                 </tr>
                 <tr>
                   <th scope="row">Lunch</th>
-                  <td class="text-center">&mdash;</td>
-                  <td class="text-center">picnic set</td>
-                  <td class="text-center">2 cafe lunches</td>
-                  <td class="text-center">on request</td>
+                  <td>no</td>
+                  <td>picnic set</td>
+                  <td>2 cafe lunches</td>
+                  <td>on request</td>
                 </tr>
                 <tr>
                   <th scope="row">Photo session</th>
-                  <td class="text-center">5 edited photos</td>
-                  <td class="text-center">15 edited photos</td>
-                  <td class="text-center">20 edited photos</td>
-                  <td class="text-center">30 edited photos</td>
-                </tr>
-                <tr>
-                  <th scope="row">Languages</th>
-                  <td class="text-center">EN / RU</td>
-                  <td class="text-center">EN / KZ / RU</td>
-                  <td class="text-center">EN / KZ / RU</td>
-                  <td class="text-center">any of three</td>
+                  <td>5 edited photos</td>
+                  <td>15 edited photos</td>
+                  <td>20 edited photos</td>
+                  <td>30 edited photos</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <th scope="row">Price per person</th>
-                  <td class="text-center"><span class="price-value">8 000 &#8376;</span></td>
-                  <td class="text-center"><span class="price-value">24 000 &#8376;</span></td>
-                  <td class="text-center"><span class="price-value">42 000 &#8376;</span></td>
-                  <td class="text-center"><span class="price-value">from 35 000 &#8376;</span></td>
+                  <td><strong>8 000 KZT</strong></td>
+                  <td><strong>24 000 KZT</strong></td>
+                  <td><strong>42 000 KZT</strong></td>
+                  <td><strong>from 35 000 KZT</strong></td>
                 </tr>
               </tfoot>
             </table>
           </div>
           <p class="table-note">
-            <i class="bi bi-info-circle me-1" aria-hidden="true"></i>
-            Students with a valid ISIC card get <span class="text-accent">15% off</span>. Children under 12
-            travel free with two paying adults.
+            Students with an ISIC card get 15% discount. Children under 12 travel free with two adults.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ===== Schedule ===== -->
-    <section class="section section-alt">
+    <!-- What is included -->
+    <section class="section section-white">
       <div class="container">
-        <div class="row g-5 align-items-start">
-          <div class="col-lg-7">
-            <span class="eyebrow">Next departures</span>
-            <h2 class="section-title">Upcoming group tours</h2>
-            <p class="section-sub mb-4">
-              These dates are already confirmed. Seats are booked in order of request, so early booking
-              is always the safest plan.
-            </p>
-
-            <div class="table-card">
-              <div class="table-responsive">
-                <table class="table price-table">
-                  <caption class="visually-hidden">Schedule of the next group tours</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col">Date</th>
-                      <th scope="col">Tour</th>
-                      <th scope="col">Seats left</th>
-                      <th scope="col">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">12 Oct 2026</th>
-                      <td>City Lights</td>
-                      <td>6 of 10</td>
-                      <td><span class="status-pill status-open">Open</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">19 Oct 2026</th>
-                      <td>Steppe &amp; Sky</td>
-                      <td>2 of 6</td>
-                      <td><span class="status-pill status-few">Few seats</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">26 Oct 2026</th>
-                      <td>Culture Pass</td>
-                      <td>7 of 8</td>
-                      <td><span class="status-pill status-open">Open</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">02 Nov 2026</th>
-                      <td>Steppe &amp; Sky</td>
-                      <td>0 of 6</td>
-                      <td><span class="status-pill status-full">Sold out</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">09 Nov 2026</th>
-                      <td>City Lights (evening)</td>
-                      <td>9 of 10</td>
-                      <td><span class="status-pill status-open">Open</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p class="table-note">Private tours can start on any date &mdash; just write your dates in the booking form.</p>
-            </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="section-title">Always included</h2>
+            <ul>
+              <li>Licensed English-speaking guide</li>
+              <li>Bottled water on every route</li>
+              <li>Travel insurance for the group</li>
+              <li>Digital map with our favourite cafes</li>
+            </ul>
           </div>
-
-          <div class="col-lg-5">
-            <div class="aside-card">
-              <h3 class="aside-title">Always included</h3>
-              <ul class="check-list mb-0">
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Licensed English-speaking guide</span></li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Bottled water on every route</span></li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Travel insurance for the group</span></li>
-                <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Digital map with our favourite cafes</span></li>
-              </ul>
-            </div>
-            <div class="aside-card mb-0">
-              <h3 class="aside-title">Not included</h3>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><i class="bi bi-dash-circle me-2 text-secondary" aria-hidden="true"></i>Flights and train tickets to Astana</li>
-                <li class="mb-2"><i class="bi bi-dash-circle me-2 text-secondary" aria-hidden="true"></i>Hotel accommodation</li>
-                <li class="mb-2"><i class="bi bi-dash-circle me-2 text-secondary" aria-hidden="true"></i>Souvenirs and personal shopping</li>
-                <li><i class="bi bi-dash-circle me-2 text-secondary" aria-hidden="true"></i>Tips for the guide (optional)</li>
-              </ul>
-            </div>
+          <div class="col-lg-6">
+            <h2 class="section-title">Not included</h2>
+            <ul>
+              <li>Flights and train tickets to Astana</li>
+              <li>Hotel accommodation</li>
+              <li>Souvenirs and personal shopping</li>
+              <li>Tips for the guide (optional)</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
+    <!-- Frequently asked questions -->
     <section class="section">
       <div class="container">
-        <div class="section-head text-center mb-5">
-          <span class="eyebrow">Questions</span>
+        <div class="text-center mb-5">
           <h2 class="section-title">Frequently asked questions</h2>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <div class="accordion" id="faqAccordion">
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="faqHeading1">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#faqBody1" aria-expanded="true" aria-controls="faqBody1">
-                    How do I pay for a tour?
-                  </button>
-                </h3>
-                <div class="accordion-collapse collapse show" id="faqBody1"
-                     aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    We confirm your booking by email first, then you can pay in cash in tenge on the day of
-                    the tour or by bank transfer to the team account. No prepayment is needed for group tours.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="faqHeading2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#faqBody2" aria-expanded="false" aria-controls="faqBody2">
-                    What happens if it rains or snows?
-                  </button>
-                </h3>
-                <div class="accordion-collapse collapse" id="faqBody2"
-                     aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    City tours run in any weather &mdash; we simply add more indoor stops such as the National
-                    Museum or Khan Shatyr. Day trips to Burabay and Korgalzhyn can be moved to another date
-                    free of charge.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="faqHeading3">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#faqBody3" aria-expanded="false" aria-controls="faqBody3">
-                    Can you pick us up from the airport?
-                  </button>
-                </h3>
-                <div class="accordion-collapse collapse" id="faqBody3"
-                     aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Yes. Airport transfer is a free bonus for the Culture Pass and Private Custom packages, and
-                    costs 3 000 &#8376; for all other bookings. Tell us your flight number in the comment field
-                    of the form.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="faqHeading4">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#faqBody4" aria-expanded="false" aria-controls="faqBody4">
-                    Are the tours suitable for children?
-                  </button>
-                </h3>
-                <div class="accordion-collapse collapse" id="faqBody4"
-                     aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    City Lights and the museums of the Culture Pass are perfect for families. Steppe &amp; Sky
-                    includes about four kilometres of easy walking, which children from six years old manage
-                    comfortably.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="faqHeading5">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#faqBody5" aria-expanded="false" aria-controls="faqBody5">
-                    Do you speak English during the whole tour?
-                  </button>
-                </h3>
-                <div class="accordion-collapse collapse" id="faqBody5"
-                     aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Yes, English is the main language of our tours, and every guide also speaks Russian. Kazakh
-                    is available on request when you book at least three days in advance.
-                  </div>
-                </div>
-              </div>
-
-            </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h3>How do I pay for a tour?</h3>
+            <p>We confirm your booking by email first, then you can pay in cash on the day of the tour.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>What happens if it rains or snows?</h3>
+            <p>City tours run in any weather. Day trips can be moved to another date free of charge.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Can you pick us up from the airport?</h3>
+            <p>Yes, the transfer is free for the Culture Pass package and costs 3000 tenge for other tours.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Are the tours suitable for children?</h3>
+            <p>Yes. City Lights and the museums are perfect for families, and children from 6 years old
+              can join the day trips.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== CTA ===== -->
-    <section class="section pb-0">
+    <!-- Call to action -->
+    <section class="section">
       <div class="container">
-        <div class="cta-band fade-up">
-          <div class="cta-inner row align-items-center g-4">
-            <div class="col-lg-8">
-              <h2>Not sure which package fits you best?</h2>
-              <p class="mb-0">Describe your dates and interests in one short form &mdash; we will recommend the
-                right route and send a ready plan.</p>
-            </div>
-            <div class="col-lg-4">
-              <div class="cta-actions d-flex flex-wrap gap-3 justify-content-lg-end">
-                <a class="btn btn-brand" href="contact.html#bookingForm">Get a recommendation</a>
-              </div>
-            </div>
-          </div>
+        <div class="cta-box">
+          <h2>Not sure which package fits you best?</h2>
+          <p>Describe your dates and interests in one short form and we will recommend the right route.</p>
+          <a class="btn btn-gold" href="contact.html">Get a recommendation</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ===== Footer ===== -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <span class="brand-mark"><i class="bi bi-brightness-high-fill" aria-hidden="true"></i></span>
-            <span class="brand-text">Astana<span class="brand-accent">Explorer</span></span>
-          </div>
+      <div class="row">
+        <div class="col-md-4 footer-column">
+          <h4>Astana Explorer</h4>
           <p>
             A student travel project from Astana IT University: routes, prices and stories about the
-            youngest capital in Central Asia.
+            capital of Kazakhstan.
           </p>
-          <div class="social-links mt-3">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
-            <a href="https://t.me" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
-            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
-          </div>
         </div>
-
-        <div class="col-6 col-lg-2">
-          <h2 class="footer-title">Explore</h2>
-          <ul class="footer-links">
+        <div class="col-md-4 footer-column">
+          <h4>Pages</h4>
+          <ul class="footer-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="tours.html">Tours &amp; prices</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-lg-2">
-          <h2 class="footer-title">Support</h2>
-          <ul class="footer-links">
+            <li><a href="tours.html">Tours and prices</a></li>
             <li><a href="blog.html">Travel blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html#bookingForm">Booking form</a></li>
-            <li><a href="about.html#team">Our team</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-4">
-          <h2 class="footer-title">Get travel ideas</h2>
-          <form class="newsletter-form" id="newsletterForm" novalidate>
-            <label class="visually-hidden" for="newsletterEmail">Email address</label>
-            <input class="form-control" id="newsletterEmail" name="newsletterEmail" type="email"
-                   placeholder="your@email.com" required>
-            <button class="btn btn-brand" type="submit">Subscribe</button>
-          </form>
-          <p class="newsletter-note" id="newsletterNote">One short email per month, no spam.</p>
-          <ul class="footer-contact mt-3">
-            <li><i class="bi bi-geo-alt" aria-hidden="true"></i>
-              <span>Mangilik El Ave 55/8, Astana, Kazakhstan</span></li>
-            <li><i class="bi bi-envelope" aria-hidden="true"></i>
-              <a href="mailto:hello@astanaexplorer.kz">hello@astanaexplorer.kz</a></li>
+        <div class="col-md-4 footer-column">
+          <h4>Contacts</h4>
+          <ul class="footer-list">
+            <li>Mangilik El Ave 55/8, Astana</li>
+            <li><a href="mailto:hello@astanaexplorer.kz">hello@astanaexplorer.kz</a></li>
+            <li><a href="tel:+77172555123">+7&nbsp;7172&nbsp;555&nbsp;123</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; <span id="currentYear">2026</span> Astana Explorer. Built with Bootstrap 5 for a Web Technologies midterm project.</p>
-        <p>Photos: <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> contributors (CC).</p>
-      </div>
+      <p class="copyright">&copy; 2026 Astana Explorer. Photos from Wikimedia Commons.</p>
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
-    <i class="bi bi-arrow-up" aria-hidden="true"></i>
-  </button>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>

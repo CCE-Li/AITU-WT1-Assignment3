@@ -1,95 +1,73 @@
 # Astana Explorer
 
 A responsive multi-page website about **Astana, the capital of Kazakhstan** — a travel guide with
-city landmarks, day trips, tour prices and a booking form. The project was built as the Midterm
-Project for the **Web Technologies 1** course (Astana IT University).
+city landmarks, day trips, tour prices and a booking form. The project was built for the
+**Web Technologies 1** midterm assignment (Astana IT University).
 
 ## Topic
 
 Travel and tourism: a small guide service that helps guests and exchange students explore the
-youngest capital of Central Asia. The design follows the colours of the national flag (sky blue
-and gold) and uses the "city of the future" theme in the photos and copywriting.
+youngest capital of Central Asia. The colours are inspired by the flag of Kazakhstan
+(blue and gold).
 
 ## Pages
 
-| Page | File | Contents |
+| Page | File | Content |
 | --- | --- | --- |
-| Home | `index.html` | Hero banner, quick travel facts, service benefits, featured destinations, planning section, testimonial carousel, CTA |
-| About | `about.html` | Team story, photo timeline, values, "Astana in numbers" table, team cards |
-| Destinations | `destinations.html` | Filterable photo gallery (Grid), day trips to Burabay and Korgalzhyn, practical tips |
-| Tours & Prices | `tours.html` | Comparison table of 4 tour packages, schedule table of upcoming group tours, FAQ accordion |
-| Travel Blog | `blog.html` | Article cards, sticky sidebar (categories, popular posts, tags), pagination |
-| Contact & Booking | `contact.html` | Booking/contact form with validation, contact cards, office hours table, embedded map |
+| Home | `index.html` | Hero banner, numbers, benefits, featured destinations, planning section, reviews, call to action |
+| About | `about.html` | Team story, project timeline, values, facts about the city, team members |
+| Destinations | `destinations.html` | Photo gallery (CSS grid), two day trips, practical tips |
+| Tours & Prices | `tours.html` | Comparison table of four tour packages, what is included, FAQ |
+| Blog | `blog.html` | Six travel articles as cards |
+| Contact | `contact.html` | Booking form, contact information, office hours table |
 
 All pages share the same fixed navigation bar and footer.
 
 ## Features implemented
 
-**HTML (semantic structure)**
+**HTML**
 
-- Semantic tags: `header`, `nav`, `main`, `section`, `article`, `aside`, `figure`/`figcaption`, `footer`
-- Headings, paragraphs, ordered/unordered lists, links and images on every page
-- Tables: tour comparison table, group tour schedule, city facts, office hours
-- Forms: booking form (contact page) and newsletter form (footer of every page)
-- `div` and `span` used for grouping and for inline styling (badges, highlighted words, avatar initials)
+- Semantic tags: `header`, `nav`, `main`, `section`, `figure` / `figcaption`, `footer`
+- Headings, paragraphs, ordered and unordered lists, links and images on every page
+- Two tables: tour packages (tours page) and office hours (contact page)
+- One form with text fields, email, phone, select, date, number, radio buttons, textarea and checkboxes
+- `div` and `span` used for grouping and inline text
 
 **CSS**
 
-- CSS custom properties (colours, fonts, radii, shadows) for a consistent theme
-- Element, class, ID and pseudo-class selectors; hover/focus states
-- Flexbox: navigation bar, feature cards, hero actions, timeline, footer columns
-- CSS Grid: statistics strip, gallery grid, card rows
-- Positioning: `fixed` header and "back to top" button, `absolute` badges/dates/overlay inside
-  `relative` containers, `sticky` blog sidebar
-- Responsive media queries for tablet (≤ 991.98 px), small tablet (≤ 767.98 px) and
-  mobile (≤ 575.98 px)
+- Selectors by element, class and id, with hover states and consistent colours
+  (`#0d3b66`, `#1b7fbd`, `#f4b223`)
+- Flexbox for the header menu, the statistics row and the two-column sections
+- CSS Grid for the photo gallery on the destinations page
+- Positioning: `position: fixed` for the header and `position: absolute` for the badges on the cards
+- Two media queries: tablet (`max-width: 992px`) and mobile (`max-width: 576px`)
 
-**Bootstrap 5**
+**Bootstrap**
 
-- Grid system (`container`, `row`, `col-*`) on every section
-- Components: navbar with collapse, carousel, accordion, breadcrumbs, pagination, alerts, badges
-- Utility classes: spacing (`mt-*`, `py-*`, `gap-*`), `text-center`, `d-flex`, `table-responsive`, buttons
-
-**JavaScript (progressive enhancement)**
-
-- Sticky header state and back-to-top button
-- Booking form validation with Bootstrap validation classes and a success message
-- Newsletter form e-mail check
-- Gallery filter by category
-- Scroll-reveal animations, automatic current year in the footer
+- Grid system (`container`, `row`, `col-*`) in all sections
+- Components: navbar with collapse, buttons, table, forms
+- Utility classes: `text-center`, `mb-5`, `g-4`, `table-responsive`, `text-muted` and others
 
 ## Project structure
 
 ```
 AITU-WT1-Assignment3/
-├── index.html          # Home page
-├── about.html          # About the project and the team
-├── destinations.html   # Gallery and day trips
-├── tours.html          # Packages, prices and schedule
-├── blog.html           # Blog articles and sidebar
-├── contact.html        # Booking form and contacts
+├── index.html
+├── about.html
+├── destinations.html
+├── tours.html
+├── blog.html
+├── contact.html
 ├── css/
-│   └── style.css       # Custom stylesheet (theme, layout, media queries)
-├── js/
-│   └── main.js         # Interactions and form validation
-├── images/             # 14 photos (Wikimedia Commons) + SVG favicon
+│   └── style.css
+├── images/            # 14 photos from Wikimedia Commons
 └── README.md
 ```
 
 ## How to run
 
-1. Download or clone the repository.
-2. Open `index.html` in any browser — no build step or server is required.
-3. Optional: start a local server for a cleaner preview:
-
-   ```bash
-   python -m http.server 8000
-   ```
-
-   then open <http://localhost:8000>.
-
-Bootstrap, Bootstrap Icons and Google Fonts are loaded from CDNs, so an internet connection is
-recommended for the exact styling (photos and layout work offline as well).
+Open `index.html` in a browser — no build step or server is needed. Bootstrap and the Google
+font are loaded from CDNs, so an internet connection is recommended.
 
 ## Live demo
 
@@ -97,14 +75,14 @@ Published with GitHub Pages: <https://cce-li.github.io/AITU-WT1-Assignment3/>
 
 ## Deployment (GitHub Pages)
 
-1. Create a new repository on GitHub and push this project folder to the `main` branch.
-2. On GitHub open **Settings → Pages**.
-3. Under *Build and deployment* choose **Deploy from a branch**, select `main` and `/ (root)`.
-4. Save; the site becomes available at `https://<username>.github.io/<repository>/`.
+1. Push the project folder to a GitHub repository.
+2. Open **Settings → Pages**.
+3. Choose **Deploy from a branch**, select `main` and the root folder `/`.
+4. Save and wait one or two minutes until the site is published.
 
 ## Image credits
 
-All photos are downloaded from [Wikimedia Commons](https://commons.wikimedia.org) and keep their
+All photos are taken from [Wikimedia Commons](https://commons.wikimedia.org) and keep their
 original licences:
 
 | File | Original | Author | Licence |
@@ -126,4 +104,4 @@ original licences:
 
 ## Author
 
-Student project — Astana IT University, Web Technologies 1, Midterm Assignment.
+Student project — Astana IT University, Web Technologies 1, midterm assignment.

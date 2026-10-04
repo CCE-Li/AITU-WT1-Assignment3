@@ -3,430 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.documentElement.classList.add("js");</script>
-  <meta name="description" content="Astana Explorer is a travel guide to Astana, Kazakhstan - landmarks, day trips, tour prices and practical tips from local guides.">
-  <title>Astana Explorer | Travel Guide to Kazakhstan's Capital</title>
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Astana Explorer - a travel guide to Astana, Kazakhstan.">
+  <title>Astana Explorer | Travel Guide to Astana</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ===== Header / navigation ===== -->
-  <header class="site-header" id="siteHeader">
-    <nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Main navigation">
+  <!-- Header and navigation menu -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <span class="brand-mark"><i class="bi bi-brightness-high-fill" aria-hidden="true"></i></span>
-          <span class="brand-text">Astana<span class="brand-accent">Explorer</span></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">Astana<span>Explorer</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
             <li class="nav-item"><a class="nav-link" href="tours.html">Tours &amp; Prices</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">Travel Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-              <a class="btn btn-brand btn-sm px-3" href="contact.html#bookingForm">Book a Tour</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <main id="main">
+  <main>
 
-    <!-- ===== Hero ===== -->
+    <!-- Hero section -->
     <section class="hero">
-      <div class="hero-media">
-        <img src="images/hero-astana.jpg" alt="Panoramic view of the Astana skyline above the Ishim river">
-      </div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-
-      <div class="container position-relative">
-        <div class="hero-content">
-          <span class="eyebrow">Kazakhstan &middot; Central Asia</span>
-          <h1 class="hero-title">Discover Astana, the city of the future</h1>
-          <p class="hero-lead">
-            Futuristic towers, golden steppe sunsets and warm Kazakh hospitality. We plan short trips,
-            city tours and day escapes around the capital so you can enjoy every moment of your stay.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-brand btn-lg" href="destinations.html">
-              <i class="bi bi-map me-2" aria-hidden="true"></i>Explore destinations
-            </a>
-            <a class="btn btn-outline-light-2 btn-lg" href="tours.html">
-              <i class="bi bi-tags me-2" aria-hidden="true"></i>See tour prices
-            </a>
-          </div>
-        </div>
-
-        <aside class="hero-info-card" aria-label="Quick travel facts">
-          <h2>Quick travel facts</h2>
-          <ul class="hero-info-list">
-            <li><span class="label">Currency</span> <span class="value">Tenge (&#8376;)</span></li>
-            <li><span class="label">Language</span> <span class="value">Kazakh / Russian</span></li>
-            <li><span class="label">Best months</span> <span class="value">May &ndash; September</span></li>
-            <li><span class="label">Time zone</span> <span class="value">UTC +5</span></li>
-          </ul>
-        </aside>
-      </div>
-
-      <a class="hero-scroll" href="#highlights" aria-label="Scroll to highlights"><span></span></a>
-    </section>
-
-    <!-- ===== Stats ===== -->
-    <section class="section pt-0" id="highlights">
-      <div class="container stats-strip">
-        <div class="stats-grid fade-up">
-          <div class="stat-item">
-            <span class="stat-value">120+</span>
-            <span class="stat-label">Landmarks guided</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">4 800</span>
-            <span class="stat-label">Happy travellers</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">25</span>
-            <span class="stat-label">Ready-made tours</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-value">4.9</span>
-            <span class="stat-label">Average rating</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== Why us ===== -->
-      <div class="container mt-5 pt-4">
-        <div class="section-head text-center mb-5">
-          <span class="eyebrow">Why Astana Explorer</span>
-          <h2 class="section-title">Small details that make a big trip</h2>
-          <p class="section-sub mx-auto">
-            We are a student team from Astana IT University who turned a course project into a real travel
-            service for guests of our city.
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-xl-3">
-            <article class="feature-card fade-up">
-              <div class="feature-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
-              <div>
-                <h3>Local guides</h3>
-                <p>Every route is designed by people who grew up in Astana and know its hidden corners.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="feature-card fade-up">
-              <div class="feature-icon"><i class="bi bi-cash-coin" aria-hidden="true"></i></div>
-              <div>
-                <h3>Fair prices</h3>
-                <p>Fixed prices with no hidden fees. Student groups get a 15% discount on all city tours.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="feature-card fade-up">
-              <div class="feature-icon"><i class="bi bi-translate" aria-hidden="true"></i></div>
-              <div>
-                <h3>Three languages</h3>
-                <p>Choose a guide who speaks English, Kazakh or Russian &mdash; or practise all of them.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <article class="feature-card fade-up">
-              <div class="feature-icon"><i class="bi bi-calendar2-check" aria-hidden="true"></i></div>
-              <div>
-                <h3>Easy booking</h3>
-                <p>Send one short form and get a personal travel plan within 24 hours.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Featured destinations ===== -->
-    <section class="section section-alt">
       <div class="container">
-        <div class="row align-items-end mb-5">
-          <div class="col-lg-8">
-            <span class="eyebrow">Top places</span>
-            <h2 class="section-title">Featured destinations in the capital</h2>
-            <p class="section-sub">
-              From the observation deck of Bayterek to the pavilions of Expo 2017 &mdash; these are the places
-              our guests love the most.
-            </p>
-          </div>
-          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a class="btn btn-outline-brand" href="destinations.html">View full gallery</a>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <a class="dest-card fade-up" href="destinations.html#bayterek">
-              <div class="dest-media">
-                <img src="images/bayterek.jpg" alt="Bayterek monument rising above the city at sunset">
-              </div>
-              <span class="dest-badge">Landmark</span>
-              <div class="dest-body">
-                <h3>Bayterek Tower</h3>
-                <p>The symbol of the city: an observation deck at 97 metres with a full panorama of the capital.</p>
-                <span class="btn-link-more">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="dest-card fade-up" href="destinations.html#khan-shatyr">
-              <div class="dest-media">
-                <img src="images/khan-shatyr.jpg" alt="The giant transparent tent of the Khan Shatyr shopping mall">
-              </div>
-              <span class="dest-badge">Landmark</span>
-              <div class="dest-body">
-                <h3>Khan Shatyr</h3>
-                <p>A transparent tent designed by Norman Foster with a beach, food court and city views inside.</p>
-                <span class="btn-link-more">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="dest-card fade-up" href="destinations.html#nur-astana-mosque">
-              <div class="dest-media">
-                <img src="images/nur-astana-mosque.jpg" alt="Blue and gold domes of the Nur-Astana mosque">
-              </div>
-              <span class="dest-badge">Culture</span>
-              <div class="dest-body">
-                <h3>Nur-Astana Mosque</h3>
-                <p>One of the largest mosques in Central Asia, known for its blue dome and quiet courtyards.</p>
-                <span class="btn-link-more">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
-              </div>
-            </a>
-          </div>
+        <div class="hero-text">
+          <h1>Discover Astana, the city of the future</h1>
+          <p>
+            Futuristic towers, golden steppe sunsets and warm Kazakh hospitality. We plan short trips,
+            city tours and day escapes around the capital of Kazakhstan.
+          </p>
+          <a class="btn btn-gold" href="destinations.html">Explore destinations</a>
+          <a class="btn btn-outline-light" href="tours.html">See tour prices</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== Plan your visit ===== -->
+    <!-- Numbers about the project -->
     <section class="section">
       <div class="container">
-        <div class="split">
-          <div>
-            <span class="eyebrow">Plan your visit</span>
-            <h2 class="section-title">A capital that is easy to love in any season</h2>
-            <p class="lead-text">
-              Astana sits in the middle of the steppe, which means bright summers, snowy winters and very
-              clear blue skies all year round. Pick a season and we will adapt the route for you.
-            </p>
-            <ul class="check-list">
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>
-                <span>Summer (June &ndash; August): river cruises, parks and evening walks along the embankment.</span></li>
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>
-                <span>Winter (December &ndash; February): ice towns, museums and the famous snowy skyline.</span></li>
-              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i>
-                <span>Shoulder months: fewer tourists, lower prices and the best light for photos.</span></li>
-            </ul>
-            <a class="btn btn-brand" href="blog.html">Read our travel blog</a>
+        <div class="stats">
+          <div class="stat-box">
+            <strong>120+</strong>
+            <span>Landmarks guided</span>
           </div>
-          <div class="frame-img">
-            <img src="images/astana-night.jpg" alt="Astana business centre illuminated at night">
+          <div class="stat-box">
+            <strong>4800</strong>
+            <span>Happy travellers</span>
+          </div>
+          <div class="stat-box">
+            <strong>25</strong>
+            <span>Ready-made tours</span>
+          </div>
+          <div class="stat-box">
+            <strong>4.9</strong>
+            <span>Average rating</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Testimonials carousel ===== -->
-    <section class="section section-alt">
+    <!-- Why our travellers choose us -->
+    <section class="section section-white">
       <div class="container">
-        <div class="section-head text-center mb-5">
-          <span class="eyebrow">Testimonials</span>
+        <div class="text-center mb-5">
+          <h2 class="section-title">Why Astana Explorer</h2>
+          <p class="section-text">
+            We are a student team from Astana IT University and we show guests the capital we love.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <h3>Local guides</h3>
+              <p>Every route is made by people who grew up in the city and know its hidden corners.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <h3>Fair prices</h3>
+              <p>Fixed prices without hidden fees. Students get 15% discount on all city tours.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <h3>Three languages</h3>
+              <p>Choose a guide who speaks English, Kazakh or Russian and practise all of them.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-box">
+              <h3>Easy booking</h3>
+              <p>Send one short form and get a personal travel plan within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three popular destinations -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Featured destinations</h2>
+          <p class="section-text">Three places our guests love the most.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <span class="card-badge">Landmark</span>
+              <img src="images/bayterek.jpg" alt="Bayterek tower in Astana">
+              <div class="card-text">
+                <h3>Bayterek Tower</h3>
+                <p>The symbol of the city with an observation deck at 97 metres.</p>
+                <a href="destinations.html">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <span class="card-badge">Landmark</span>
+              <img src="images/khan-shatyr.jpg" alt="Khan Shatyr shopping mall in Astana">
+              <div class="card-text">
+                <h3>Khan Shatyr</h3>
+                <p>A giant transparent tent with shops, cafes and a beach inside.</p>
+                <a href="destinations.html">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="photo-card">
+              <span class="card-badge">Culture</span>
+              <img src="images/nur-astana-mosque.jpg" alt="Nur-Astana mosque with a blue dome">
+              <div class="card-text">
+                <h3>Nur-Astana Mosque</h3>
+                <p>One of the largest mosques in Central Asia with a beautiful blue dome.</p>
+                <a href="destinations.html">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two columns: text and photo -->
+    <section class="section section-white">
+      <div class="container">
+        <div class="two-columns">
+          <div>
+            <h2 class="section-title">Plan your visit in any season</h2>
+            <p>
+              Astana is in the middle of the steppe, so summers are bright and winters are snowy.
+              Pick a season and we will adapt the route for you.
+            </p>
+            <ul>
+              <li>Summer: river cruises, parks and evening walks along the embankment.</li>
+              <li>Winter: ice towns, museums and the famous snowy skyline.</li>
+              <li>Spring and autumn: fewer tourists and the best light for photos.</li>
+            </ul>
+            <a class="btn btn-blue" href="blog.html">Read our travel blog</a>
+          </div>
+          <div>
+            <img src="images/astana-night.jpg" alt="Astana business centre at night">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-5">
           <h2 class="section-title">What our travellers say</h2>
         </div>
 
-        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner pb-5">
-
-            <div class="carousel-item active">
-              <figure class="quote-card">
-                <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-                <blockquote class="quote-text">
-                  I had only two days in Astana, but the route our guide planned felt like a whole week.
-                  The sunset at the Bayterek observation deck was unforgettable.
-                </blockquote>
-                <figcaption class="quote-person">
-                  <span class="team-avatar" aria-hidden="true">EL</span>
-                  <span>
-                    <span class="person-name">Emma Lindqvist</span>
-                    <span class="person-detail">Student &middot; Sweden</span>
-                  </span>
-                </figcaption>
-              </figure>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="info-box">
+              <p><em>"I had only two days in Astana, but the route felt like a whole week."</em></p>
+              <strong>Emma Lindqvist</strong>
+              <p class="small text-muted mb-0">Student, Sweden</p>
             </div>
-
-            <div class="carousel-item">
-              <figure class="quote-card">
-                <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-                <blockquote class="quote-text">
-                  The day trip to Burabay National Park was the highlight of our exchange semester.
-                  Everything was organised, from transport to lunch in a lakeside cafe.
-                </blockquote>
-                <figcaption class="quote-person">
-                  <span class="team-avatar" aria-hidden="true">AR</span>
-                  <span>
-                    <span class="person-name">Arman Rakhimov</span>
-                    <span class="person-detail">Exchange student &middot; Almaty</span>
-                  </span>
-                </figcaption>
-              </figure>
-            </div>
-
-            <div class="carousel-item">
-              <figure class="quote-card">
-                <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-                <blockquote class="quote-text">
-                  Booking through the website took two minutes, and the travel plan arrived the next morning.
-                  Clear prices, friendly guides, zero stress.
-                </blockquote>
-                <figcaption class="quote-person">
-                  <span class="team-avatar" aria-hidden="true">MC</span>
-                  <span>
-                    <span class="person-name">Maria Chen</span>
-                    <span class="person-detail">Visitor &middot; South Korea</span>
-                  </span>
-                </figcaption>
-              </figure>
-            </div>
-
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carousel-indicators bottom-0">
-            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1"></button>
-            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1" aria-label="Review 2"></button>
-            <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2" aria-label="Review 3"></button>
+          <div class="col-md-4">
+            <div class="info-box">
+              <p><em>"The day trip to Burabay National Park was the highlight of our semester."</em></p>
+              <strong>Arman Rakhimov</strong>
+              <p class="small text-muted mb-0">Exchange student, Almaty</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-box">
+              <p><em>"Booking took two minutes and the travel plan arrived the next morning."</em></p>
+              <strong>Maria Chen</strong>
+              <p class="small text-muted mb-0">Visitor, South Korea</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== CTA ===== -->
-    <section class="section pb-0">
+    <!-- Call to action -->
+    <section class="section">
       <div class="container">
-        <div class="cta-band fade-up">
-          <div class="cta-inner row align-items-center g-4">
-            <div class="col-lg-8">
-              <h2>Ready to see Astana with your own eyes?</h2>
-              <p class="mb-0">
-                Tell us your dates and interests &mdash; we will send a personal route and a fixed price
-                within one working day.
-              </p>
-            </div>
-            <div class="col-lg-4">
-              <div class="cta-actions d-flex flex-wrap gap-3 justify-content-lg-end">
-                <a class="btn btn-brand" href="contact.html#bookingForm">Book a tour</a>
-                <a class="btn btn-outline-light-2" href="tours.html">Compare prices</a>
-              </div>
-            </div>
-          </div>
+        <div class="cta-box">
+          <h2>Ready to see Astana with your own eyes?</h2>
+          <p>Tell us your dates and interests and we will send a personal route with a fixed price.</p>
+          <a class="btn btn-gold" href="contact.html">Book a tour</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ===== Footer ===== -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <span class="brand-mark"><i class="bi bi-brightness-high-fill" aria-hidden="true"></i></span>
-            <span class="brand-text">Astana<span class="brand-accent">Explorer</span></span>
-          </div>
+      <div class="row">
+        <div class="col-md-4 footer-column">
+          <h4>Astana Explorer</h4>
           <p>
             A student travel project from Astana IT University: routes, prices and stories about the
-            youngest capital in Central Asia.
+            capital of Kazakhstan.
           </p>
-          <div class="social-links mt-3">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
-            <a href="https://t.me" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
-            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
-          </div>
         </div>
-
-        <div class="col-6 col-lg-2">
-          <h2 class="footer-title">Explore</h2>
-          <ul class="footer-links">
+        <div class="col-md-4 footer-column">
+          <h4>Pages</h4>
+          <ul class="footer-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="tours.html">Tours &amp; prices</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-lg-2">
-          <h2 class="footer-title">Support</h2>
-          <ul class="footer-links">
+            <li><a href="tours.html">Tours and prices</a></li>
             <li><a href="blog.html">Travel blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html#bookingForm">Booking form</a></li>
-            <li><a href="about.html#team">Our team</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-4">
-          <h2 class="footer-title">Get travel ideas</h2>
-          <form class="newsletter-form" id="newsletterForm" novalidate>
-            <label class="visually-hidden" for="newsletterEmail">Email address</label>
-            <input class="form-control" id="newsletterEmail" name="newsletterEmail" type="email"
-                   placeholder="your@email.com" required>
-            <button class="btn btn-brand" type="submit">Subscribe</button>
-          </form>
-          <p class="newsletter-note" id="newsletterNote">One short email per month, no spam.</p>
-          <ul class="footer-contact mt-3">
-            <li><i class="bi bi-geo-alt" aria-hidden="true"></i>
-              <span>Mangilik El Ave 55/8, Astana, Kazakhstan</span></li>
-            <li><i class="bi bi-envelope" aria-hidden="true"></i>
-              <a href="mailto:hello@astanaexplorer.kz">hello@astanaexplorer.kz</a></li>
+        <div class="col-md-4 footer-column">
+          <h4>Contacts</h4>
+          <ul class="footer-list">
+            <li>Mangilik El Ave 55/8, Astana</li>
+            <li><a href="mailto:hello@astanaexplorer.kz">hello@astanaexplorer.kz</a></li>
+            <li><a href="tel:+77172555123">+7&nbsp;7172&nbsp;555&nbsp;123</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p>&copy; <span id="currentYear">2026</span> Astana Explorer. Built with Bootstrap 5 for a Web Technologies midterm project.</p>
-        <p>Photos: <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> contributors (CC).</p>
-      </div>
+      <p class="copyright">&copy; 2026 Astana Explorer. Photos from Wikimedia Commons.</p>
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
-    <i class="bi bi-arrow-up" aria-hidden="true"></i>
-  </button>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
