@@ -93,7 +93,7 @@ recommended for the exact styling (photos and layout work offline as well).
 
 ## Live demo
 
-Published with GitHub Pages: `https://<username>.github.io/AITU-WT1-Assignment3/`
+Published with GitHub Pages: <https://cce-li.github.io/AITU-WT1-Assignment3/>
 
 ## Deployment (GitHub Pages)
 
