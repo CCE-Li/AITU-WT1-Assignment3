@@ -90,7 +90,7 @@ original licences:
 | `hero-astana.jpg` | Astana Esil view | Dauren Nabijan | CC0 |
 | `bayterek.jpg` | Baiterek | אמר מר | CC BY-SA 4.0 |
 | `khan-shatyr.jpg` | Khan-Shatyr shopping mall | Dauren Nabijan | CC0 |
-| `nur-astana-mosque.jpg` | Nur Astana Mosque 02 | Davide Mauro | CC BY-SA 4.0 |
+| `nur-astana-mosque.jpg` | Astana-2021-10 - 41 | Vyacheslav Bukharov | CC BY-SA 4.0 |
 | `palace-peace.jpg` | Palace of Peace and Reconciliation (pyramid) | Nikolamikovic82 | CC0 |
 | `national-museum.jpg` | National Museum of the Republic of Kazakhstan 01 | Davide Mauro | CC BY-SA 4.0 |
 | `astana-opera.jpg` | The State Opera and Ballet Theatre "Astana Opera" | Nikolamikovic82 | CC0 |
