@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add("js");</script>
+  <meta name="description" content="Photo gallery of Astana landmarks, culture, nature and food, plus day trips to Burabay and Korgalzhyn.">
+  <title>Destinations | Astana Explorer</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== Header / navigation ===== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-mark"><i class="bi bi-brightness-high-fill" aria-hidden="true"></i></span>
+          <span class="brand-text">Astana<span class="brand-accent">Explorer</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="tours.html">Tours &amp; Prices</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Travel Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-brand btn-sm px-3" href="contact.html#bookingForm">Book a Tour</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner">
+      <div class="container banner-inner">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Destinations</li>
+          </ol>
+        </nav>
+        <h1>Destinations &amp; gallery</h1>
+        <p>
+          Twelve places we recommend to every guest, from glass towers and golden domes to quiet parks
+          and steppe lakes around the capital.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head text-center mb-4">
+          <span class="eyebrow">City gallery</span>
+          <h2 class="section-title">Choose your kind of Astana</h2>
+          <p class="section-sub mx-auto">
+            Use the filters to see only landmarks, culture, nature or food spots.
+          </p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter gallery by category">
+          <button class="filter-btn active" type="button" data-filter="all">All places</button>
+          <button class="filter-btn" type="button" data-filter="landmark">Landmarks</button>
+          <button class="filter-btn" type="button" data-filter="culture">Culture</button>
+          <button class="filter-btn" type="button" data-filter="nature">Nature &amp; parks</button>
+          <button class="filter-btn" type="button" data-filter="food">Food</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+          <figure class="gallery-item wide" id="bayterek" data-category="landmark">
+            <img src="images/bayterek.jpg" alt="Bayterek monument at sunset">
+            <span class="gallery-tag">Landmark</span>
+            <figcaption class="gallery-caption">
+              <h3>Bayterek Tower</h3>
+              <p>Observation deck at 97 m &middot; open daily 10:00 &ndash; 22:00</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" id="khan-shatyr" data-category="landmark">
+            <img src="images/khan-shatyr.jpg" alt="Transparent tent of Khan Shatyr shopping mall">
+            <span class="gallery-tag">Landmark</span>
+            <figcaption class="gallery-caption">
+              <h3>Khan Shatyr</h3>
+              <p>The world's largest tent-shaped building with a rooftop beach.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" id="nur-astana-mosque" data-category="culture">
+            <img src="images/nur-astana-mosque.jpg" alt="Nur-Astana mosque with blue dome">
+            <span class="gallery-tag">Culture</span>
+            <figcaption class="gallery-caption">
+              <h3>Nur-Astana Mosque</h3>
+              <p>Blue dome, quiet courtyard and free entry outside prayer times.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" id="palace-peace" data-category="culture">
+            <img src="images/palace-peace.jpg" alt="The pyramid of the Palace of Peace and Reconciliation">
+            <span class="gallery-tag">Culture</span>
+            <figcaption class="gallery-caption">
+              <h3>Palace of Peace &amp; Reconciliation</h3>
+              <p>Glass pyramid by Norman Foster and the Opera Hall inside.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="culture">
+            <img src="images/national-museum.jpg" alt="Facade of the National Museum of Kazakhstan">
+            <span class="gallery-tag">Culture</span>
+            <figcaption class="gallery-caption">
+              <h3>National Museum</h3>
+              <p>Gold halls, steppe history and the huge Eagle Hall &mdash; plan two hours.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="culture">
+            <img src="images/astana-opera.jpg" alt="Astana Opera theatre building">
+            <span class="gallery-tag">Culture</span>
+            <figcaption class="gallery-caption">
+              <h3>Astana Opera</h3>
+              <p>Marble halls, world-class ballet and student tickets from 2 000 &#8376;.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item wide" data-category="landmark">
+            <img src="images/nur-sultan-street.jpg" alt="Ak Orda Presidential Palace seen from the square">
+            <span class="gallery-tag">Landmark</span>
+            <figcaption class="gallery-caption">
+              <h3>Ak Orda Presidential Palace</h3>
+              <p>The white and gold residence on Mangilik El avenue &mdash; best photos from the opposite bank.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="landmark">
+            <img src="images/astana-night.jpg" alt="Illuminated business centre of Astana at night">
+            <span class="gallery-tag">Landmark</span>
+            <figcaption class="gallery-caption">
+              <h3>Evening skyline</h3>
+              <p>Light shows start at dusk; the left bank looks best after 21:00.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="nature">
+            <img src="images/ishim-river.jpg" alt="Embankment of the Ishim river in Astana">
+            <span class="gallery-tag">Nature</span>
+            <figcaption class="gallery-caption">
+              <h3>Ishim River Embankment</h3>
+              <p>Cycle paths, river boats and one long promenade through the city.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="nature">
+            <img src="images/central-park.jpg" alt="Fountain in a green park of Astana">
+            <span class="gallery-tag">Nature</span>
+            <figcaption class="gallery-caption">
+              <h3>Lovers Park</h3>
+              <p>Shady alleys and fountains, perfect for a hot summer afternoon.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="food">
+            <img src="images/trip-food.jpg" alt="Traditional Kazakh dish beshbarmak on a plate">
+            <span class="gallery-tag">Food</span>
+            <figcaption class="gallery-caption">
+              <h3>Kazakh national kitchen</h3>
+              <p>Beshbarmak, baursaks and kumys &mdash; our food tour visits five family cafes.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <p class="small-muted mt-4 mb-0">
+          Tip: all places above are within 30 minutes of the city centre by bus or taxi.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Day trips ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head text-center mb-5">
+          <span class="eyebrow">Around the capital</span>
+          <h2 class="section-title">Day trips from Astana</h2>
+          <p class="section-sub mx-auto">
+            Two natural escapes that fit into a single day, both reachable with our transport
+            and a packed lunch from the city.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="dest-card fade-up">
+              <div class="dest-media">
+                <img src="images/burabay.jpg" alt="Pine forest and lake in Burabay National Park">
+              </div>
+              <span class="dest-badge">Nature &middot; 250 km</span>
+              <div class="dest-body">
+                <h3>Burabay National Park</h3>
+                <p>
+                  Pine forests, granite rocks and clear lakes also known as the "Kazakh Switzerland".
+                  We leave the city at 08:00 and return after sunset.
+                </p>
+                <ul class="check-list mb-3">
+                  <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Boat trip on lake Borovoe</span></li>
+                  <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Hike to the Okzhetpes rock viewpoint</span></li>
+                  <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Lunch in a lakeside ethno village</span></li>
+                </ul>
+                <a class="btn btn-outline-brand btn-sm" href="tours.html">See price</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <article class="dest-card fade-up">
+              <div class="dest-media">
+                <img src="images/korgalzhyn.jpg" alt="Steppe lake of the Korgalzhyn nature reserve">
+              </div>
+              <span class="dest-badge">Wildlife &middot; 130 km</span>
+              <div class="dest-body">
+                <h3>Korgalzhyn Nature Reserve</h3>
+                <p>
+                  A UNESCO steppe reserve and the northernmost nesting place of pink flamingos.
+                  Binoculars and a ranger guide are included in the trip.
+                </p>
+                <ul class="check-list mb-3">
+                  <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Bird watching with a local ranger</span></li>
+                  <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Visit to the steppe museum in Korgalzhyn village</span></li>
+                  <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Photo stop on the open steppe road</span></li>
+                </ul>
+                <a class="btn btn-outline-brand btn-sm" href="tours.html">See price</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Travel tips ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head text-center mb-5">
+          <span class="eyebrow">Good to know</span>
+          <h2 class="section-title">Practical tips before you go</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-xl-3">
+            <div class="info-card">
+              <span class="info-icon"><i class="bi bi-bus-front" aria-hidden="true"></i></span>
+              <div>
+                <h3>Getting around</h3>
+                <p>Buses cost 140 &#8376;, Yandex and inDrive taxis are cheap and easy to order.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="info-card">
+              <span class="info-icon"><i class="bi bi-cup-hot" aria-hidden="true"></i></span>
+              <div>
+                <h3>Food</h3>
+                <p>Try baursaks with tea for breakfast and beshbarmak for a big family dinner.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="info-card">
+              <span class="info-icon"><i class="bi bi-suitcase2" aria-hidden="true"></i></span>
+              <div>
+                <h3>What to pack</h3>
+                <p>A warm jacket even in summer: steppe evenings are famously cool and windy.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="info-card">
+              <span class="info-icon"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+              <div>
+                <h3>Etiquette</h3>
+                <p>Cover shoulders and knees in mosques; shoes come off at the entrance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section pb-0">
+      <div class="container">
+        <div class="cta-band fade-up">
+          <div class="cta-inner row align-items-center g-4">
+            <div class="col-lg-8">
+              <h2>Found a place you like?</h2>
+              <p class="mb-0">Add it to your booking request and we will build the route around your list.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="cta-actions d-flex flex-wrap gap-3 justify-content-lg-end">
+                <a class="btn btn-brand" href="contact.html#bookingForm">Start booking</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="brand-mark"><i class="bi bi-brightness-high-fill" aria-hidden="true"></i></span>
+            <span class="brand-text">Astana<span class="brand-accent">Explorer</span></span>
+          </div>
+          <p>
+            A student travel project from Astana IT University: routes, prices and stories about the
+            youngest capital in Central Asia.
+          </p>
+          <div class="social-links mt-3">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+            <a href="https://t.me" target="_blank" rel="noopener" aria-label="Telegram"><i class="bi bi-telegram" aria-hidden="true"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h2 class="footer-title">Explore</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="tours.html">Tours &amp; prices</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h2 class="footer-title">Support</h2>
+          <ul class="footer-links">
+            <li><a href="blog.html">Travel blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#bookingForm">Booking form</a></li>
+            <li><a href="about.html#team">Our team</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h2 class="footer-title">Get travel ideas</h2>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <label class="visually-hidden" for="newsletterEmail">Email address</label>
+            <input class="form-control" id="newsletterEmail" name="newsletterEmail" type="email"
+                   placeholder="your@email.com" required>
+            <button class="btn btn-brand" type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-note" id="newsletterNote">One short email per month, no spam.</p>
+          <ul class="footer-contact mt-3">
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span>Mangilik El Ave 55/8, Astana, Kazakhstan</span></li>
+            <li><i class="bi bi-envelope" aria-hidden="true"></i>
+              <a href="mailto:hello@astanaexplorer.kz">hello@astanaexplorer.kz</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Astana Explorer. Built with Bootstrap 5 for a Web Technologies midterm project.</p>
+        <p>Photos: <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> contributors (CC).</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

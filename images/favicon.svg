@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Astana Explorer logo">
+  <rect width="64" height="64" rx="14" fill="#07263b"/>
+  <circle cx="32" cy="24" r="9" fill="#f4b223"/>
+  <path d="M32 6v5M32 37v5M14 24h5M45 24h5M19.2 11.2l3.5 3.5M41.3 33.3l3.5 3.5M44.8 11.2l-3.5 3.5M22.7 33.3l-3.5 3.5" stroke="#f4b223" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 56c0-6.6 5.4-12 12-12s12 5.4 12 12z" fill="#1b9ad6"/>
+  <rect x="4" y="54" width="56" height="4" rx="2" fill="#f4b223"/>
+</svg>
